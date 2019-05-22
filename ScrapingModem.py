@@ -157,10 +157,10 @@ def modemScrap():
         print(StatusDFS_To_Scraped_FinalDB)
 
                     
-        connection = mysql.connector.connect(host='82.212.184.48',
+        connection = mysql.connector.connect(host='',
         database='infoclient',
-        user='root',
-        password='Voo123$!')
+        user='',
+        password=''!')
         cursor = connection.cursor(prepared=True)
         sql_insert_query = """INSERT INTO modem
         (version, cmip, mode, canal, bande, bandsteering, interface,mode_5G, canal_5G, bande_5G, interface_5G, DFS) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"""
